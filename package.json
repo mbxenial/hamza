@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-register": "^6.5.2",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-shell": "^0.5.2",
+    "run-sequence": "^1.1.5"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "name": "nuts-hugo",
+  "description": "> Site ported from html to Hugo on 18/05/2017",
+  "version": "1.0.0",
+  "main": "gulpfile.babel.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremielondon/nuts-hugo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremielondon/nuts-hugo/issues"
+  },
+  "homepage": "https://github.com/jeremielondon/nuts-hugo#readme"
+}

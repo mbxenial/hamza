@@ -1,0 +1,112 @@
+## Site info test 1 ##
+######################
+
+baseurl = "https://nutspubcrawl.com/"
+
+#Testing baseurl
+#baseurl = "http://localhost.nutspubcrawl.com/"
+canonifyURLs = true  # Transform all URLs to absolute using baseURL
+theme = "nutspubcrawl"
+MetaDataFormat = "yaml"
+enableRobotsTXT = true
+publishDir = "docs"
+
+
+[outputs]
+home = [ "HTML", "RSS", "REDIR", "HEADERS" ]
+
+[mediaTypes]
+[mediaTypes."text/netlify"]
+suffix = ""
+delimiter = ""
+
+[outputFormats]
+[outputFormats.REDIR]
+mediatype = "text/netlify"
+baseName = "_redirects"
+isPlainText = true
+notAlternative = true
+[outputFormats.HEADERS]
+mediatype = "text/netlify"
+baseName = "_headers"
+isPlainText = true
+notAlternative = true
+
+[author]
+    name = "Jeremie Leroy"
+
+[Taxonomies]
+    tag = "tags"
+    topic = "topics"
+    categories = "categories"
+
+
+[params]
+# 1000 free emails per month
+# with formspree.io
+email = "info@nutspubcrawl.com"
+twitter = "https://twitter.com/NutsPubCrawl"
+handle = "@NutsPubCrawl"
+address = """132-140 Goswell Road,
+<br>London EC1V 7DY,
+<br>United Kingdom.</p>"""
+og_image = "/images/Nutspubcrawl-brand.png"
+
+custom_css = ["css/assets/bootstrap-material-design-font/css/material.min.css",
+"css/assets/web/assets/mobirise-icons/mobirise-icons.min.css",
+"css/assets/et-line-font-plugin/style.min.css",
+"css/assets/tether/tether.min.css",
+"css/assets/bootstrap/css/bootstrap.min.css",
+"css/assets/dropdown/css/style.min.css",
+"css/assets/animate.css/animate.min.css",
+"css/assets/socicon/css/styles.min.css",
+"css/assets/theme/css/style.min.css",
+"css/assets/mobirise/css/mbr-additional.min.css",
+]
+
+[params.widgets]
+    categories = "true"
+
+## Multilingual settings ##
+###########################
+
+defaultContentLanguage = "en"
+
+## Per lang settings ##
+#######################
+
+[Languages]
+[Languages.en]
+title = "Nuts Pub Crawls London"
+weight = 1
+defaultKeywords = ["Pub crawls London", "pub crawl London", "pub crawl","bar hopping"]
+defaultDescription = "Pub Crawls in London is a bar hopping tour, Visit Camden Town, Piccadilly Circus, Covent Garden, Shoreditch areas. Best way to party in clubs like KOKO, Ministry of Sound, Cargo etc..."
+disqusShortname = "nutspubcrawl"
+
+[Languages.fr]
+title = "Londres Pub Crawls Nuts"
+weight = 2
+defaultKeywords = ["Pub Crawl a londres", "tournée des bars", "Sortir","faire la fete"]
+defaultDescription = "Faire la tournée des bars | clubs du centre de Londres, de Camden Town, Shoreditch. Ministry of Sound, KOKO, Cargo fond parti des clubs visité durant nos tours."
+disqusShortname = "nutspubcrawlfr"
+
+[Languages.es]
+title = "Nuts Pub Crawls Londres"
+weight = 3
+defaultKeywords = ["Pub crawls Londres", "pub crawl Londres", "pub crawl","crawl londres"]
+defaultDescription = "Pub Crawls en Londres, es la mejor forma para salir de fiesta en Londres y descubrir las discotecas y bares más populares( Ministry of Sound, Koko, Cargo). Pub Crawl en Candem Town, Covent garden/ Piccadilly Circus"
+disqusShortname = "nutspubcrawles"
+
+[Languages.de]
+title = "Nuts Pub Crawls Londres"
+weight = 3
+defaultKeywords = ["Pub crawls Londres", "pub crawl Londres", "pub crawl","crawl londres"]
+defaultDescription = "Pub Crawls in London, it is probably the best way to party and discover the clubs and pubs of London with Nuts Pub Crawl, all our tours aim to provide a great night out."
+disqusShortname = "nutspubcrawles"
+
+[Languages.pt]
+title = "Pub Crawls em Londres"
+weight = 3
+defaultKeywords = ["Pub crawls Londres", "pubs de Londres", "bares","Londres durante uma noite"]
+defaultDescription = "Pub Crawls em Londres, Visite as melhores baladas, bares e pubs de Londres durante uma noite com a nossa seleção dos melhores organizadores de tours."
+disqusShortname = "nutspubcrawles"
